@@ -18,7 +18,7 @@ subtitle:
 feature:
 - description: 90%
   icon: fa-microchip
-  icon_pack: fa-solid
+  icon_pack: fab
   name: Embedded Systems
 - description: 100%
   icon: chart-line
