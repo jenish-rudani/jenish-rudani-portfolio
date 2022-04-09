@@ -18,12 +18,12 @@ subtitle:
 feature:
 - description: 90%
   icon: microchip
-  icon_pack: fab
+  icon_pack: fas
   name: Embedded Systems
 - description: 100%
-  icon: chart-line
+  icon: microchip-ai
   icon_pack: fas
-  name: Statistics
+  name: EdgeML
 - description: 10%
   icon: camera-retro
   icon_pack: fas
