@@ -28,7 +28,7 @@ experience:
     company_logo: guard
     location: British Columbia
     date_start: '2021-09-01'
-    date_end: 'Current'
+    date_end: ''
     description: |2-
         Responsibilities include:
         * Develop Low Power FW for BLE Asset Tags with AoA
