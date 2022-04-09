@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Jenish-Rudani-Portfolio # Website name
+title: "Jenish Rudani" # Website name
 baseURL: "https://jenish-rudani.netlify.app/" # Website URL
 
 ############################
