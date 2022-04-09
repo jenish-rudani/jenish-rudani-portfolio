@@ -37,7 +37,7 @@ experience:
   - title: Embedded System Engineer
     company: Ultimuslab
     company_url: 'https://ultimuslab.com/'
-    company_logo: 
+    company_logo: ultimuslab-logo
     location: India
     date_start: '2020-03-03'
     date_end: '2021-08-01'
