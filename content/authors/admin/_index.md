@@ -27,10 +27,10 @@ education:
   courses:
   - course: MEng in Engineering
     institution: Simon Fraser University
-    year: 2023
+    year: "2021-2023"
   - course: BTech in Electronics & Communication Engineering
     institution: Dharmsinh Desai University
-    year: 2021
+    year: "2016-2021"
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -42,23 +42,20 @@ social:
   link: '/#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/JenishRudani
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/jenish-rudani
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/jenishrudani/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`, 
 # and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: uploads/resume.pdf
+- icon: cv
+  icon_pack: ai
+  link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -67,8 +64,12 @@ email: ""
 highlight_name: true
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Since a young age, my passion has been Embedded Devices. I have always loved making things. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am pursuing Master of Engineering at Simon Fraser University to ameliorate my engineering and problem-solving skills. My main goal is to learn Machine Learning, specifically for Low Resource Computing Devices, such as MicroController. I believe that by gaining experience in this field, I would be able to combine my embedded systems skills to work on developing EdgeML Devices.
+
+As a Part-Time student, I am working on developing a Bluetooth 5.2 tag firmware for RTLS asset tracking solution.
+
+During my professional career, I have architected an Inventory Tracking/Management System including developing a custom Hardware and Software SDK. I have worked on many projects to self-learn Embedded Systems, read multiple books for deeper understanding. Some of the cooler projects are mentioned below.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
