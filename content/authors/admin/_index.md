@@ -66,9 +66,7 @@ highlight_name: true
 
 Since a young age, my passion has been Embedded Devices. I have always loved making things. 
 
-I am pursuing Master of Engineering at Simon Fraser University to ameliorate my engineering and problem-solving skills. My main goal is to learn Machine Learning, specifically for Low Resource Computing Devices, such as MicroController. I believe that by gaining experience in this field, I would be able to combine my embedded systems skills to work on developing EdgeML Devices.
-
-As a Part-Time student, I am working on developing a Bluetooth 5.2 tag firmware for RTLS asset tracking solution.
+I am pursuing Master of Engineering at Simon Fraser University to ameliorate my engineering and problem-solving skills. My main goal is to learn Machine Learning, specifically for Low Resource Computing Devices. I believe that by gaining experience in this field, I would be able to combine my embedded systems skills to work on developing EdgeML Devices.
 
 During my professional career, I have architected an Inventory Tracking/Management System including developing a custom Hardware and Software SDK. I have worked on many projects to self-learn Embedded Systems, read multiple books for deeper understanding. Some of the cooler projects are mentioned below.
 
