@@ -72,4 +72,4 @@ As a Part-Time student, I am working on developing a Bluetooth 5.2 tag firmware 
 
 During my professional career, I have architected an Inventory Tracking/Management System including developing a custom Hardware and Software SDK. I have worked on many projects to self-learn Embedded Systems, read multiple books for deeper understanding. Some of the cooler projects are mentioned below.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
