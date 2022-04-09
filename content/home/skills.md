@@ -17,7 +17,7 @@ subtitle:
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
 - description: 90%
-  icon: fa-microchip
+  icon: microchip
   icon_pack: fab
   name: Embedded Systems
 - description: 100%
