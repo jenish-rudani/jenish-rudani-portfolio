@@ -16,19 +16,22 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-- description: 90%
+- description: 100%
   icon: microchip
   icon_pack: fas
-  name: Embedded Systems
-- description: 100%
-  icon: microchip-ai
+  name: Embedded Software
+- description: 80%
+  icon: microchip
   icon_pack: fas
   name: EdgeML
-- description: 10%
-  icon: camera-retro
+- description: 100%
+  icon: file-code
   icon_pack: fas
-  name: Photography
-
+  name: C | C++ | Python
+- description: 100%
+  icon: chart-line
+  icon_pack: fas
+  name: Statistics
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"
