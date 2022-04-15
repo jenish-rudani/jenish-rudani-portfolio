@@ -1,6 +1,6 @@
 ---
 title: Let's build models using NVIDIA GPU
-subtitle: First part in the series of Learning about EDGE Machine Learning
+subtitle: First part in the series of Learning Edge Machine Learning
 
 # Summary for listings and search engines
 summary: This blog post provides a guide to configuring your windows 10, or Ubuntu machine so that it can build models using Tensorflow framework on Nvidia GPUs.
