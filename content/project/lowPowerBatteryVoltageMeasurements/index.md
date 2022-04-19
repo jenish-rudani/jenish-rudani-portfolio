@@ -56,8 +56,32 @@ Because, generally speaking, you don't need to read battery voltage much often, 
 
 ### The Concept
 
-We measure the battery voltage against internal reference voltage. In the case of Thunderboard, we have 1.21 V internal reference voltage, which is maintained automatically by internal DC-DC circuits. Siliconlabs makes it easy to measure battery voltage by provides the AVDD pin, which outputs {{< math >}}
+We measure the battery voltage against internal reference voltage. In the case of Thunderboard, we have 1.21 V internal reference voltage, which is maintained automatically by internal DC-DC circuits. Siliconlabs makes it easy to measure battery voltage by provides the AVDD pin, which outputs
 $$
-AVDD = VCC / 4
+AVDD = VCC / 4 \ \ (volt)
 $$
-{{< /math >}} voltage level. 
+
+Why do we need this? We need this because, if you read say 1.5 volt with respect to internal voltage reference 1.21 V then you will cap it at 1.21 V. You can not read higher voltage level using ADC peripheral than internal voltage reference. 
+
+Normally, we have 3.3V coin cell battery powered embedded devices, where we would use this. So, in the case of thunderboard, we have 
+$$
+
+AVDD = (3.3) / 4 = 0.825, \ \ (< 1.21 \ \ v)
+
+$$
+
+In the case of full battery voltage, if we were to read AVDD against internal VRef of 1.21V using 12 bit ADC peripheral then, we can successfully read the battery voltage according to following formula,
+
+$$
+
+\therefore batteryVoltage = (ADCRegData) * 1.21 / (2^12)
+
+$$
+
+$$
+
+\therefore scaledBatteryVoltage = 4 * batteryVoltage
+
+$$
+
+This will give us the final battery voltage.
