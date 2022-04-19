@@ -86,7 +86,7 @@ $$
 
 This will give us the final battery voltage.
 
-The code as follows:
+The demo code below demonstrates the this practically. Here, we are using a onboard push button as an interrupt to read the battery voltage, when the push button is pressed.
 
 ```C
 #include "em_device.h"
@@ -205,8 +205,7 @@ static void gpioSetup (void)
 /**************************************************************************//**
  * @brief  Main function
  *****************************************************************************/
-int
-main (void)
+int main (void)
 {
   CHIP_Init ();
   gpioSetup ();
