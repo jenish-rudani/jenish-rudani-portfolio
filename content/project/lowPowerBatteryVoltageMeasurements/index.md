@@ -63,7 +63,7 @@ $$
 
 Why do we need this? We need this because, if you read say 1.5 volt with respect to internal voltage reference 1.21 V then you will cap it at 1.21 V. You can not read higher voltage level using ADC peripheral than internal voltage reference. 
 
-Normally, we have 3.3V coin cell battery powered embedded devices, where we would use this. So, in the case of thunderboard, we have {{< math >}} $AVDD = (3.3) / 4 = 0.825, \ \ (< 1.21 \ \ v)$ {{< math >}}
+Normally, we have 3.3V coin cell battery powered embedded devices, where we would use this. So, in the case of thunderboard, we have {{< math >}} $AVDD = (3.3) / 4 = 0.825, \ \ (< 1.21 \ \ v)$ {{< /math >}}
 
 In the case of full battery voltage, if we were to read AVDD against internal VRef of 1.21V using 12 bit ADC peripheral then, we can successfully read the battery voltage according to following formula,
 
@@ -74,7 +74,7 @@ $$
 \therefore scaledBatteryVoltage = 4 * batteryVoltage
 
 $$
-{{< math >}}
+{{< /math >}}
 
 This will give us the final battery voltage.
 
