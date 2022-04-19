@@ -2,7 +2,8 @@
 title: Ultra Low Power Battery Voltage Measurement
 summary: Baremetal Firmware to read battery voltage without using external components, with ultra low power design
 tags:
-- Embedded Software, Baremetal
+- Embedded Software
+- Baremetal
 date: "2022-04-17T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
@@ -54,7 +55,7 @@ In ultra low power embedded systems, you would have a system tick of <`x`>. This
 
 Because, generally speaking, you don't need to read battery voltage much often, as this devices have years of battery life. Whereas, if you were designing a firmware for android device, or any battery operated high power embedded device, then you would have a systick in the range of seconds. Otherwise, battery measurement is not a critical task that needs to addressed every few seconds. 
 
-### The Concept
+### `The Concept`
 
 We measure the battery voltage against internal reference voltage. In the case of Thunderboard, we have 1.21 V internal reference voltage, which is maintained automatically by internal DC-DC circuits. Siliconlabs makes it easy to measure battery voltage by provides the AVDD pin, which outputs
 $$
@@ -68,16 +69,20 @@ Normally, we have 3.3V coin cell battery powered embedded devices, where we woul
 In the case of full battery voltage, if we were to read AVDD against internal VRef of 1.21V using 12 bit ADC peripheral then, we can successfully read the battery voltage according to following formula,
 
 {{< math >}}
-$$\therefore batteryVoltage = (ADCRegData) * 1.21 / (2^12) \\
-
-\therefore scaledBatteryVoltage = 4 * batteryVoltage $$
+$$\therefore batteryVoltage = (ADCRegData) * 1.21 / (2^12)$$
 {{< /math >}}
 
-This will give us the final battery voltage.
+{{< math >}}
+$$ \therefore scaledBatteryVoltage = 4 * batteryVoltage $$
+{{< /math >}}
 
-The demo code below demonstrates the this practically. Here, we are using a onboard push button as an interrupt to read the battery voltage, when the push button is pressed.
+This will give us the correct current battery voltage.
 
-```C
+### `Demo Application Code`
+
+The demo code below demonstrates the this practically. Here, we are using a onboard push button as an interrupt to read the battery voltage, when the push button is pressed. You can find the `github repository` [here](https://github.com/jenish-rudani/batteryVoltage_LowPowerMode_SiliconLab.git).
+
+```c
 #include "em_device.h"
 #include "em_chip.h"
 #include "em_core.h"
@@ -105,17 +110,12 @@ int32_t readBatteryVoltage ()
   uint32_t adc_Value;
 
   IADC_Init_t init = IADC_INIT_DEFAULT;
-
   IADC_AllConfigs_t initAllConfigs = IADC_ALLCONFIGS_DEFAULT;
-
   IADC_InitSingle_t initSingle = IADC_INITSINGLE_DEFAULT;
-
   IADC_SingleInput_t initSingleInput = IADC_SINGLEINPUT_DEFAULT;
 
   CMU_ClockEnable (cmuClock_IADC0, true);
-
   IADC_reset (IADC0);
-
   CMU_ClockSelectSet (cmuClock_IADCCLK, cmuSelect_FSRCO);
 
   init.warmup = iadcWarmupNormal;
@@ -142,6 +142,7 @@ int32_t readBatteryVoltage ()
   IADC_initSingle (IADC0, &initSingle, &initSingleInput);
   IADC_command (IADC0, iadcCmdStartSingle);
 
+  // Polling for results
   while ((IADC0->STATUS
       & (_IADC_STATUS_CONVERTING_MASK | _IADC_STATUS_SINGLEFIFODV_MASK))
       != IADC_STATUS_SINGLEFIFODV)
@@ -182,7 +183,7 @@ static void gpioSetup (void)
   // Configure GPIO Clock. Note this is not required for EFR32xG21
   CMU_ClockEnable (cmuClock_GPIO, true);
 
-  // Configure Button PB0 as input and enable interrupt
+  // Configure Button PB0 (onboard push button) as input and enable interrupt
   GPIO_PinModeSet (gpioPortB, 0, gpioModeInputPull, 1);
   GPIO_ExtIntConfig (gpioPortB, 0, 0, false, true, true);
 
