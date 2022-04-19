@@ -54,3 +54,10 @@ In ultra low power embedded systems, you would have a system tick of <`x`>. This
 
 Because, generally speaking, you don't need to read battery voltage much often, as this devices have years of battery life. Whereas, if you were designing a firmware for android device, or any battery operated high power embedded device, then you would have a systick in the range of seconds. Otherwise, battery measurement is not a critical task that needs to addressed every few seconds. 
 
+### The Concept
+
+We measure the battery voltage against internal reference voltage. In the case of Thunderboard, we have 1.21 V internal reference voltage, which is maintained automatically by internal DC-DC circuits. Siliconlabs makes it easy to measure battery voltage by provides the AVDD pin, which outputs {{< math >}}
+$$
+AVDD = VCC / 4
+$$
+{{< /math >}} voltage level. 
