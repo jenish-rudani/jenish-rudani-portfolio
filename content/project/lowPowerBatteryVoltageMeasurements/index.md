@@ -2,7 +2,7 @@
 title: Ultra Low Power Battery Voltage Measurement
 summary: Baremetal Firmware to read battery voltage without using external components, with ultra low power design
 tags:
-- Embedded Systems, Baremetal
+- Embedded Software, Baremetal
 date: "2022-04-17T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
