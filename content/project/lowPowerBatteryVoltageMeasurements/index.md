@@ -68,12 +68,9 @@ Normally, we have 3.3V coin cell battery powered embedded devices, where we woul
 In the case of full battery voltage, if we were to read AVDD against internal VRef of 1.21V using 12 bit ADC peripheral then, we can successfully read the battery voltage according to following formula,
 
 {{< math >}}
-$$
+$$\therefore batteryVoltage = (ADCRegData) * 1.21 / (2^12) \\
 
-\therefore batteryVoltage = (ADCRegData) * 1.21 / (2^12) \\
-\therefore scaledBatteryVoltage = 4 * batteryVoltage
-
-$$
+\therefore scaledBatteryVoltage = 4 * batteryVoltage $$
 {{< /math >}}
 
 This will give us the final battery voltage.
