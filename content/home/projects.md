@@ -31,6 +31,8 @@ content:
     tag: Embedded Software
   - name: Edge ML
     tag: edgeML
+  - name: MATLAB
+    tag: Matlab
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
