@@ -38,3 +38,5 @@ backgrounds.
 - Varying Irregular breast lesion shapes in BUS Images
   
 Also, in addition to this we also have speckle in the BUS images, which also can affect the effectiveness of the algorithm. This makes accurate BUS segmentation a challenging and an interesting problem to solve.
+
+Contd...
