@@ -1,5 +1,5 @@
 ---
-title: Automatic Bteast Ultrasound Image Segmentation
+title: Automatic Breast Ultrasound Image Segmentation
 summary: The objective is to apply the fundamentals learnt in ENSC895-Medical/Digital Image Processing course during my masters to design a system to automatically segment lesions in BUS images. It includes segmentation of benign and malignant tumor areas.
 tags:
 - Image Processing
